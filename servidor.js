@@ -11,7 +11,7 @@ const servidor = express();
 servidor.use(cors());
 servidor.use(express.json()); // para recibir json de los servidorres
 servidor.use(morgan("dev"));
-servidor.use("/login",rutacrearcuenta);  // raiz del programa
+servidor.use("/registrate",rutacrearcuenta);  // raiz del programa
 
 
 servidor.get("/", (solicitud,respuesta)=>{
