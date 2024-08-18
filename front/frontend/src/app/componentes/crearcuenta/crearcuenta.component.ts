@@ -47,7 +47,7 @@ export class CrearcuentaComponent {
               this.toastrservice.success(
                 '¡Usuario creado exitosamente!'
               );
-              this.privateRouter.navigate(['/login']);
+              this.privateRouter.navigate(['/vv']);
             } else {
               console.error('Error creating user:', response.mensaje);
               console.log('error: ', Error);
