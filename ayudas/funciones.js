@@ -14,15 +14,13 @@ export function generarToken(payload) {
 
 export function verificarToken(token) {
   return new Promise((resolver, rechazar) => {
-
-  jwt.verify(token,'llave secreta',(error, decodificado)=>{   ///verificar el token, llave secreta es un string que creamos de
-
-    if (error) {
-      rechazar(error);
-    }
-    else {
+    jwt.verify(token,'llave secreta',(error, decodificado)=>{   ///verificar el token, llave secreta es un string que creamos de
+      if (error) {
+        rechazar(error);
+      }
+      else {
       resolver(decodificado); ///regresa el token
-    }
-  })
+      }
+    })
   });
 }
