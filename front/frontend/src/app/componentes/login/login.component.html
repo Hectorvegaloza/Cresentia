@@ -1,27 +1,36 @@
 
 <body>
-  <img src="../../assets/log.png"   alt="Logo cresentia"
-  width="100px"
-  height="100px">
-  <h1 id="title"> Login </h1>
+  <div class="circle2"></div>
+  <div class="circle3"></div>
+ <br><br><br>
+  <div class="container">
+    <img src="../../assets/log.png"  class="img-fluid" alt="Logo cresentia" width="300px"
+    height="100px">
+    </div>
+  
+
   
   <div id="milogin">
+    <h1 id="title"> Login </h1>
+    <h6 class="mb-4" style="text-align: center; font-size: 15px;">Please enter your email & phone number to Login</h6>
   <form [formGroup]="credentialsForm" (ngSubmit)="handleSubmit()">
-    <div class="mb-3">
-      <label class="form-label">Email</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" formControlName="username">
-      <div id="emailHelp" class="form-text">Tu email no será compartido con ningún tercero.</div>
+    <div class="mb-4 input-group">
+      <span class="input-group-text " id="inputGroupPrepend2"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg></span>
+      
+      <input type="email" class="form-control" id="exampleInputEmail1" formControlName="username" placeholder="Email or phone number">
     </div>
     
-    <div class="mb-3">
-      <label class="form-label">Contraseña</label>
-      <input type="password" class="form-control" id="exampleInputPassword1" formControlName="password">
+    <div class="mb-4 input-group">
+      <span class="input-group-text" id="inputGroupPrepend2"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M240-640h360v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85h-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640Zm0 480h480v-400H240v400Zm240-120q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM240-160v-400 400Z"/></svg></span>
+<!--       <label class="form-label">Contraseña</label> -->
+      <input type="password" class="form-control" id="exampleInputPassword1" formControlName="password" placeholder="Password">
     </div>
-    <button type="submit" class="btn btn-outline-light bg-my-color col-12" value="Log In">Iniciar Sesión</button>
+    <button type="submit" class="btn btn-outline-yellow bg-my-color col-12" value="Log In">Login</button>
+    <p class= "vega">Don't have account? <a href="\Crearcuenta">Sign up</a></p>
   </form>
-  
-  </div><br> <br> <br> <br> 
-  
-  <a href="\Crearcuenta"><h1 id="title1" href=> ¡Registrate aquí! </h1></a><br> <br> <br>
+  </div><br> <br>
+  <span class="mi-caja">
+    <p>Dale Sentido a tu vida</p>
+  </span>   <br> <br> 
   
   </body>

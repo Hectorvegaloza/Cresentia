@@ -5,9 +5,19 @@
     font-size: 32px;
     font-style: normal;
     padding: 1%;
+    margin: 20px;
     text-align: center;
     position:relative;
     z-index: 1; 
+}
+
+.vega{
+    text-align: right;
+    margin-top: 20px;
+    font-size: 12px;
+}
+a .vega{
+    text-decoration: none;
 }
 
 #title1 {
@@ -21,22 +31,177 @@
     position:relative;
     z-index: 1;
 }
+
 a{ text-decoration: none;}
 
 body{
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff00;
+}
+
+.mi-caja{
+    display: inline-block;
+    font-family: "Poppins", sans-serif; 
+    justify-content: center;
+    padding: 15px;
+    display: flex;
+    text-decoration: underline overline;
+    text-decoration-color: rgb(129, 129, 131);
+    text-decoration-skip: ink;
+    line-height: 1.5;
+
 }
 
 div#milogin {
-    background: #ffffff84;
+    background: #ffffffdc;
     width: 363px;
+    height: 450px;
     margin-left: calc(50% - 180px);
-    padding: 15px;
-    border-radius: 15px;
-    margin-top: 20px;
+    padding: 20px;
+    border-radius: 25px;
+    margin-top: 0px;
     color: rgb(0, 0, 0);
     justify-content: center;
     margin-bottom: 10px;
-    font-family: "Madimi One", sans-serif;
-    font-style: italic;
+    font-family: "Poppins", sans-serif;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.33);
+/*     font-style: italic; */
   }
+
+
+.circle2 {
+    position: absolute;
+    border-radius:100% 40% 100% 83%;
+    background-color: rgba(22, 209, 251, 0.205); /* Color y opacidad del círculo */
+    width: 350px;
+    height: 350px;
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+}
+
+.circle3 {
+    position: absolute;
+    border-radius: 100% 40% 100% 83%;
+    background-color:#f5a9a078; /* Color y opacidad del círculo */
+    transform: skewX(0deg) skewY(20deg);
+    width: 300px;
+    height: 300px;
+    bottom: 0px;
+    left: 0px;
+    z-index: -1;
+
+}
+  .container {
+    color: rgb(219, 207, 207);
+    justify-content: center;
+    margin-bottom: 10px;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+  
+.signup-text {
+    font-size: 14px;
+    color: #49594f;
+    margin-top: 20px;
+    justify-content:center;
+}
+
+
+button {
+    background-color:#F5A8A0;
+    color: rgb(10, 9, 9);
+    padding: 25px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.btn-outline-yellow:hover {
+    background-color: #D1335D; /* Green */
+    color: white;
+  }
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .circle2 {
+        position: absolute;
+        border-radius:100% 40% 100% 83%;
+        background-color: rgba(22, 209, 251, 0.205); /* Color y opacidad del círculo */
+        width: 220px;
+        height: 220px;
+        top: 0px;
+        right: 0px;
+        z-index: -1;
+    }
+    
+    .circle3 {
+        position: absolute;
+        border-radius: 100% 40% 100% 83%;
+        background-color:#f5a9a078; /* Color y opacidad del círculo */
+        transform: skewX(0deg) skewY(20deg);
+        width: 200px;
+        height: 200px;
+        bottom: 0px;
+        left: 0px;
+        z-index: -1;
+    
+    }
+  }
+@media (max-width: 768px) {
+    .circle2 {
+        position: absolute;
+        border-radius:100% 40% 100% 83%;
+        background-color: rgba(22, 209, 251, 0.205); /* Color y opacidad del círculo */
+        width: 120px;
+        height: 120px;
+        top: 0px;
+        right: 0px;
+        z-index: -1;
+    }
+    
+    .circle3 {
+        position: absolute;
+        border-radius: 100% 40% 100% 83%;
+        background-color:#f5a9a078; /* Color y opacidad del círculo */
+        transform: skewX(0deg) skewY(20deg);
+        width: 200px;
+        height: 200px;
+        bottom: 0px;
+        left: 0px;
+        z-index: -1;
+    
+    }
+  }
+@media screen and (max-width: 400px) {
+    .circle2 {
+        position: absolute;
+        border-radius:100% 40% 100% 83%;
+        background-color: rgba(22, 209, 251, 0.205); /* Color y opacidad del círculo */
+        width: 180px;
+        height: 180px;
+        top: 0px;
+        right: 0px;
+        z-index: -1;
+    }
+    
+    .circle3 {
+        position: absolute;
+        border-radius: 100% 40% 100% 83%;
+        background-color:#f5a9a078; /* Color y opacidad del círculo */
+        transform: skewX(0deg) skewY(20deg);
+        width: 200px;
+        height: 200px;
+        bottom: 0px;
+        left: 0px;
+        z-index: -1;
+    
+    }
+}
