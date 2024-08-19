@@ -10,13 +10,14 @@ import { Router } from '@angular/router';
 import { JwtHelperService } from '@auth0/angular-jwt';
 import { LoginService } from '../../service/login.service';
 import { ToastrService } from 'ngx-toastr';
-
+import Swal from'sweetalert2';
+import { RouterLink } from '@angular/router';
 const jwtHelperService = new JwtHelperService();
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [ReactiveFormsModule], // este modulo se debe importar
+  imports: [ReactiveFormsModule, RouterLink], // este modulo se debe importar
   templateUrl: './login.component.html',
   styleUrl: './login.component.css',
 })
@@ -52,24 +53,34 @@ export class LoginComponent {
               this.router.navigateByUrl('/book-form');}
             else{
                      this.router.navigateByUrl('/shop');
-                     this.toastrService.success('Bienvenido!'); 
+                     Swal.fire({
+                      position: "center",
+                      icon: "success",
+                      title: "Haz iniciado Sesión",
+                      showConfirmButton: false,
+                      timer: 1500
+                    });
     
             }         
 
           
         
         } else {
-            this.toastrService.warning('Datos erroneos!','Revisa tus credenciales', {
-              positionClass: 'toast-top-center',
-              timeOut: 2000, 
-              closeButton: true 
-          }); 
-
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Datos erroneos!, Revisa tus credenciales",
+            /* footer: '<a href="#">Why do I have this issue?</a>' */
+          });
           }
         });
       }
     } else {
-      this.toastrService.info('Todos los campos son obligatorios');
+      Swal.fire({
+        title: "¿Inicias Sesión?",
+        text: "Todos los campos son obligatorios",
+        icon: "question"
+      });
     }
   }
   ngOnInit (){

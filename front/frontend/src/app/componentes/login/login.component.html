@@ -12,7 +12,7 @@
   
   <div id="milogin">
     <h1 id="title"> Login </h1>
-    <h6 class="mb-4" style="text-align: center; font-size: 15px;">Please enter your email & phone number to Login</h6>
+    <h6 class="mb-4" style="text-align: center; font-size: 12px; color: rgb(195, 184, 184);">Please enter your email & phone number to Login</h6>
   <form [formGroup]="credentialsForm" (ngSubmit)="handleSubmit()">
     <div class="mb-4 input-group">
       <span class="input-group-text " id="inputGroupPrepend2"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg></span>
@@ -26,7 +26,7 @@
       <input type="password" class="form-control" id="exampleInputPassword1" formControlName="password" placeholder="Password">
     </div>
     <button type="submit" class="btn btn-outline-yellow bg-my-color col-12" value="Log In">Login</button>
-    <p class= "vega">Don't have account? <a href="\Crearcuenta">Sign up</a></p>
+    <p class= "vega">Don't have account? <a routerLink="/Elije">Sign up</a></p>
   </form>
   </div><br> <br>
   <span class="mi-caja">
