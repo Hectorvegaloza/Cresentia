@@ -10,7 +10,7 @@ const esquemaUsuario = new Schema( // estoy creando un esquema estrcuctura de co
         correo: {type: String, require: true},
         contrasenia: {type: String, require: true},
         contraseniaconfirm: {type: String, require: true},
-        telefono:  {type: Number},
+
 });
 
 

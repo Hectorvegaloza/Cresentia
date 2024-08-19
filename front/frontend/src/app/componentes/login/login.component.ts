@@ -52,10 +52,7 @@ export class LoginComponent {
               this.router.navigateByUrl('/book-form');}
             else{
                      this.router.navigateByUrl('/shop');
-                     this.toastrService.success('Bienvenido!','', {
-                      positionClass: 'toast-top-center',
-                      timeOut: 2000, 
-                      closeButton: true   }); 
+                     this.toastrService.success('Bienvenido!'); 
     
             }         
 

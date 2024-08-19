@@ -1,6 +1,6 @@
 
 #title {
-    font-family: "Rubik Doodle Shadow", system-ui;
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 32px;
     font-style: normal;
@@ -11,7 +11,7 @@
 }
 
 #title1 {
-    font-family: "Rubik Doodle Shadow", system-ui;
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 32px;
     color: black;
@@ -24,11 +24,11 @@
 a{ text-decoration: none;}
 
 body{
-    background-color: rgb(253, 231, 199);
+    background-color: rgb(255, 255, 255);
 }
 
 div#milogin {
-    background: #b49e79dc;
+    background: #ffffff84;
     width: 363px;
     margin-left: calc(50% - 180px);
     padding: 15px;
