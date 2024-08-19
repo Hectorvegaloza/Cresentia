@@ -7,14 +7,13 @@ import { ToastrService } from 'ngx-toastr';
 @Injectable({
   providedIn: 'root',
 })
-
 export class LoginService {
   constructor() {}
   toastrService = inject(ToastrService);
   httpClient = inject(HttpClient);
   router = inject(Router);
   
-API_URL='http://localhost:3000/login';
+API_URL='http://localhost:3000/inicio-sesion';
 
   login(credential: Credential) {
     return this.httpClient.post(
@@ -24,9 +23,7 @@ API_URL='http://localhost:3000/login';
   }
 
   validateToken(token:string){
-    
-    return this.httpClient.get(`${this.API_URL}/${token}`)
-  }
+    return this.httpClient.get(`${this.API_URL}/${token}`)}
 
   isLogin() {
     if (localStorage.getItem('token')) {
@@ -48,3 +45,4 @@ API_URL='http://localhost:3000/login';
   }); 
   }
 }
+

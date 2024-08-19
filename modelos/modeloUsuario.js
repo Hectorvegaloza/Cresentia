@@ -6,8 +6,10 @@ import { model } from "mongoose";
 const esquemaUsuario = new Schema( // estoy creando un esquema estrcuctura de como ingresan los datos
     {
         nombre: {type: String, require: true},
+        apellido:{type: String, require: true},
         correo: {type: String, require: true},
         contrasenia: {type: String, require: true},
+        contraseniaconfirm: {type: String, require: true},
 
 });
 

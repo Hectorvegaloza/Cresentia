@@ -10,7 +10,7 @@ export class CrearserviceService {
   constructor(private http: HttpClient) {}
 
   createUser(userData: UserData) {
-    const apiUrl = 'http://localhost:3000/registrate'; 
+    const apiUrl = 'http://localhost:3000/crearcuenta'; 
     return this.http.post<any>(apiUrl, userData);
 }
 

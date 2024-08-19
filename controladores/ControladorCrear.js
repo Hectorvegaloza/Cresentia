@@ -1,5 +1,5 @@
 import bcrypt from "bcryptjs";
-import modelocrearcuenta from "../modelos/modelocrearcuenta.js";
+import modelocrearcuenta from "../modelos/modeloUsuario.js";
 
     const ControladorCrearCuenta = {
       crearUsuario: async (solicitud, respuesta) => {
