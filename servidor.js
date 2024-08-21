@@ -5,6 +5,7 @@ import rutacrearcuenta from "./rutas/rutacrearcuenta.js";
 import enrutadorInicioSesion from "./rutas/rutaInicioSesion.js";
 import enrutadorPreregistro from "./rutas/rutapreregistro.js";
 import morgan from "morgan";
+import path from "path";
 
 /* const express = require("express") --- forma antigua */
 
@@ -16,6 +17,8 @@ servidor.use(morgan("dev"));
 servidor.use("/crearcuenta",rutacrearcuenta);  // raiz del programa
 servidor.use("/inicio-sesion",enrutadorInicioSesion);  // raiz del programa
 servidor.use("/perfil",enrutadorPreregistro);  // raiz del programa
+servidor.use("/pictures", express.static(path.resolve(`pictures`))); 
+
 
 servidor.get("/", (solicitud,respuesta)=>{
     respuesta.json({

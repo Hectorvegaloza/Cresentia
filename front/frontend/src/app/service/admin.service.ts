@@ -29,15 +29,15 @@ export class AdminService {
     return this.httpClient.post(this.API_URL, formData);
   }
 
-  getBooks(): Observable<any> {
+  getuser(): Observable<any> {
     return this.httpClient.get(this.API_URL);
   }
-
+/* 
   updateBook(id: string, updatedBookData: any): Observable<any> {
     return this.httpClient.put(`${this.API_URL}/${id}`, updatedBookData);
   }
 
   deleteBook(id: string): Observable<any> {
     return this.httpClient.delete(`${this.API_URL}/${id}`);
-  }
+  } */
 }

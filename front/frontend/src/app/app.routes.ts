@@ -6,6 +6,7 @@ import { AntepaginaComponent } from './componentes/antepagina/antepagina.compone
 import { AntepaginaadultosComponent } from './componentes/antepaginaadultos/antepaginaadultos.component';
 import { AntepaginafamiliaComponent } from './componentes/antepaginafamilia/antepaginafamilia.component';
 import { CrearnombrefotoComponent } from './componentes/crearnombrefoto/crearnombrefoto.component';
+import { LeernombreComponent } from './componentes/leernombre/leernombre.component';
 
 
 export const routes: Routes = [
@@ -16,6 +17,7 @@ export const routes: Routes = [
     {path: 'Antepaginaadultos', title: "Antepaginaadultos",component: AntepaginaadultosComponent},
     {path: 'Antepaginafamilia', title: "Antepaginafamilia",component: AntepaginafamiliaComponent},
     {path: 'Pre-registro', title: "Pre-registro",component: CrearnombrefotoComponent},
+    {path: 'leerdatos', title: "leerdatos",component: LeernombreComponent},
     {path: '', redirectTo: 'login', pathMatch: 'full'}, //redireccionar un componente al Usuario, cuando no ponga una ruta me redirija a la ruta home
      /* {path:'**', title: "page no encontrada", component: PagenofountComponent}//quiero que verifique si esta entrando a otras rutas 
  */

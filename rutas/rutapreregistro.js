@@ -5,7 +5,8 @@ import Controladorpreregistro from "../controladores/controladorpreregistro.js";
 const enrutadorPreregistro = Router();
 
 enrutadorPreregistro.post('/', Controladorpreregistro.crearNombre);
-/* enrutadorPreregistro.get('/:id', enrutadorPreregistro.leerUsuario);
+enrutadorPreregistro.get('/', Controladorpreregistro.leertodos);
+/*
 enrutadorPreregistro.get('/', CenrutadorPreregistro.leerUsuarios);
 enrutadorPreregistro.put('/:id', enrutadorPreregistro.actualizarUsuario);
 enrutadorPreregistro.delete('/:id', enrutadorPreregistro.eliminarUsuario); */

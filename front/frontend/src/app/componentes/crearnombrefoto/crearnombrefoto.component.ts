@@ -121,7 +121,7 @@ export class CrearnombrefotoComponent {
    */
 /*   ngOnInit() {
     const token: any = localStorage.getItem('token');
-    if (token) {
+    if (token) { 
       this.loginService.validateToken(token).subscribe((response: any) => {
         console.log("response: ", response)
         if (response.resultado === 'bien') {

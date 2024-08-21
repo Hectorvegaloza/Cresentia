@@ -5,9 +5,7 @@ import multer from "multer";
 
     const Controladorpreregistro = {
       crearNombre: async (solicitud, respuesta) => {
-          try {
-
-            
+          try {  
             const storage = multer.diskStorage({
               destination: 'pictures',
               filename: (req, file, cb) => {
@@ -95,6 +93,22 @@ import multer from "multer";
             console.log("error:", error);
           }
         }, 
+    
+   leertodos: async (solicitud, respuesta) => {
+    try {
+    const todosLosUsuarios = await modelopreregistro.find();
+    respuesta.json({
+        resultado: "bien",
+        mensaje: "usuarios leídos",
+        datos: todosLosUsuarios
+    });
+    } catch (error) {
+    respuesta.json({
+        resultado: "mal",
+        mensaje: "ocurrió un error al leer todos los usuarios",
+        datos: error
+    });
     }
-
+},
+    }
     export default Controladorpreregistro;
